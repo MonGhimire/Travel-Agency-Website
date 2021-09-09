@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+#header{
+    width: 100vw;
+    height: 70px;
+    background-color: black;    
+    position: sticky;
+}
+
+
+
+.logo {
+    color: white;
+    font-size: 3rem;
+    padding-left: 20px;
+
+    /* padding-left: 30px; */
+    padding-top: 10px;
+
+    padding-top: 5px;
+    display: inline-block;
+}
+
+#nav-bar {
+    /* float: right; */
+    margin-right: 2rem;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    text-transform: capitalize;
+}
+
+#nav-bar li {
+    float: left;
+    /* padding: 10px; */
+    padding: 20px;
+    list-style-type: none;
+
+}
+
+#nav-bar a {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 2em;
+}
+
+
+/* .wrapper {
+    width: 100%;
+    height: 700px;
+} */
+
+.home {
+    position: relative;
+  /* height: 100vh;
+  width: 100%; 
+  position: absolute; 
+  border: 2px solid black; */
+  
+}
+
+.home-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+
+}
+
+.button {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+      
+}
+
+.button:hover {
+    background-color: black;  
+}
+
+/* .button a{
+    color: white;
+} */
+
+.bg-image {
+    background-image: url(https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=674&q=80);
+    height:95vh;
+    background-position:90%;
+    /* width: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.section{
+    margin-top: 1rem;
+
+}
+
+.home {
+    margin: 0;
+}
+
+.experience {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+
+
+
+
+/* .home-title {} */
+
+/* .home-title h1 {} */
+
+/* .home-title p{} */
+
+
+
