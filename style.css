@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&display=swap');
+
+*{
+ padding:0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Noto Sans JP', sans-serif;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+
+
+
+#header {
+ width: 100%;
+ height: 100px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ backdrop-filter: blur(10px); /* Blur effect */
+ background-color: rgba(255, 255, 255, 0.2);
+ z-index: 15;
+ background-color: transparent;
+ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+#nav-bar {
+ width:100%;
+ position: relative;
+ right: 20px;
+ text-transform: capitalize;
+}
+
+.logo {
+ color: #1a1b1c;
+ font-size: 3rem;
+ padding-left: 3rem;
+ padding-top: 1rem;
+}
+
+.nav-menu {
+ position:absolute;
+ right: 20px;
+ top: 0;
+ 
+}
+
+.nav-item {
+ padding: 2rem;
+ list-style-type: none;
+}
+
+.nav-link {
+ text-decoration: none;
+ font-size: 1.5rem;
+ /* color: #1a1b1c;
+ font-weight: 900; */
+}
+
+
+/* REUSABLE */
+
+li {
+ display:inline-block;
+}
+
+ul {
+ list-style: none;
+}
+
+a {
+ text-decoration: none;
+}
+
+button,
+input {
+ border: none;
+}
+
+button {
+ cursor: pointer;
+}
+
+.button {
+ display: inline-block;
+ background-color: rgba(0, 0, 0, 0.4);
+ color: white;
+ padding: 1rem 2rem;
+ font-weight: bold;
+ transition: 0.3s;
+ -webkit-transition: 0.3s;
+ -moz-transition: 0.3s;
+ -ms-transition: 0.3s;
+ -o-transition: 0.3s;
+}
+
+.button:hover {
+ background-color: #1a1b1c;
+}
+
+
+input {
+ outline: none;
+}
+
+.section {
+ padding: 6rem 0 2.5rem;
+}
+
+.section-title {
+ font-size: 1.25rem;
+ color: #1a1b1c;
+ text-align: center;
+ text-transform: capitalize;
+ margin-bottom: 2rem;
+}
+
+/* WRAPPER */
+.wrapper {
+ position: relative;
+ top: 0;
+ left: 0;
+}
+
+/* HOME PAGE */
+.home {
+ position: relative;
+}
+
+.home-img {
+ background-image: url(https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=674&q=80);
+ height:100vh;
+ background-position:100%;
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: relative;
+ top: 0;
+ left: 0;
+}
+
+.home-container {
+ position: absolute;
+ top: 30%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ /* text-align: center; */
+ /* color: aliceblue; */
+}
+
+.home-title {
+ font-weight:900;
+ text-transform: capitalize;
+ display: block;
+ margin-bottom: .75rem;
+ font-size: 2rem;
+
+}
+
+.home-main-title {
+ font-size: 6rem;
+ font-weight: 900;
+ /* text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.35); */
+ /* text-shadow: -1px 1px 3px rgba(255, 255, 255, .9); */
+ text-transform: uppercase;
+
+ color: aliceblue;
+ /* color: transparent; */
+ line-height: 5.3rem;
+} */
+
+.colored {
+ color: yellow;
+}
+
+.home-button {
+ position: absolute;
+ bottom: 1.2%;
+ right: 30%;
+ padding: 3rem 2rem;
+}
+
+
+
+/* ABOUT */
+.about-container {
+ width: 90%;
+ height: 800px;   
+ margin:0 auto;         
+ position:relative;                                          
+}
+
+.about-data {
+ display: inline-block;
+ width: 40%;
+ position: absolute;
+ top: 30%;
+ left: 0;
+ text-align: justify;
+}
+
+.about-description {
+ text-align: justify;
+}
+
+
+.about-images {
+ position: absolute;
+ top: 20%;
+ right:0;
+ display: inline-block;
+ width: 40%;
+ height: 100%;
+
+}
+
+.about-image-1 {
+ width: 400px;
+ height:400px;
+ position:absolute;
+ bottom: 35%;
+ left: -20%;
+ z-index: 4;
+}
+
+.about-image-2 {
+ width: 400px;
+ height:400px;
+ z-index: 7;
+ position: absolute;
+ bottom: 20%;
+ left: 0;
+}
+
+.about-image-3 {
+ width: 760px;
+ position: absolute;
+ /* left: 0;
+ top: 0; */
+}
+
+.about-image-1:hover {
+ z-index: 9;
+}
+
+.about-image-3:hover{
+ z-index: 10;
+}
+
+
+
+
+.about-experience {
+ margin-top: 4rem;
+ text-align: center;
+}
+
+.experience-data {
+ margin-top: 2rem;
+ margin-right: 3rem;
+ display: inline-block;
+ text-align: justify;
+}
+
+.second {
+text-align: center;
+}
+
+.third {
+ text-align: right;
+}
+
+.container {
+ margin-left: 3rem;
+}
+
+.about-btn {
+ position: absolute;
+ bottom: 0;
+}
+
+
+/* DESTINATIONS */
+.destination-card .destination-img {
+ height: 60vh;
+ width: 100%;
+ object-fit: cover;
+}
+
+.discover-container {
+ width: 90%;
+ margin: 0 auto;
+}
+
+.destination-card {
+ width: 25%;
+ display: inline-block;
+ vertical-align: top;
+ margin-right: 6rem;
+ margin-top: 6rem;
+ position: relative;
+ overflow: hidden;
+}
+
+
+/* to push the first and third card to the right to center cards */
+.destination-card:nth-child(1) {
+ margin-left: 6rem;
+}
+
+.destination-card:nth-child(4) {
+margin-left: 6rem;
+}
+
+
+.rating-content,
+.destination-data {
+ color: #fff;
+}
+
+
+.rating-content {
+ position: absolute;
+ top: 0;
+ right:0;
+ left: 70%;
+ font-size: 1.8rem;
+ padding: .75rem .75rem 1rem;
+ display: inline-block;
+
+}
+
+.destination-data {
+ position: absolute;
+ bottom: 18%;
+ left: 0;
+ padding: 0 2rem .5rem 2rem;
+ text-transform: capitalize;
+ /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); */
+ backdrop-filter: blur(10px);
+ /* Blur effect */
+
+}
+
+.destination-data .destination-city {
+ font-size: 2.6rem;
+ font-weight: 700;
+}
+
+.destination-data .destination-country {
+ font-size: 1.6rem;
+ /* font-weight: 700; */
+}
+
+.destination-data .destination-price {
+ font-size: 1.6rem;
+ font-weight: 900;
+ position:absolute;
+ left: 0;
+ top: 130%;
+ padding-left: 2rem;
+}
+
+.destination-btn {
+ position:absolute;
+ bottom: 5px;
+ right: 0;
+ height:70px;
+ width:140px;
+ font-size: 2rem;
+ color: #fff;
+}
+
+.destination-img {
+ transition: 0.3s;
+}
+
+.destination-card:hover .destination-img {
+ transform:scale(1.1);
+ -webkit-transform:scale(1.1);
+ -moz-transform:scale(1.1);
+ -ms-transform:scale(1.1);
+ -o-transform:scale(1.1);
+}
+
+/* --Footer changes-- */
+footer {
+ position: relative;
+ height: 500px;
+ width: 100%;
+ margin-top: 1rem;
+ text-align: center;  
+
+}
+
+
+.footer-image {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ height: 500px;
+ width: 100%;
+ background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+ background-size: cover;
+ background-repeat: no-repeat;
+ /* background-position: center bottom; */
+ filter: blur(4px)
+ 
+ /* padding: 10px, 10px; */
+ /* z-index: 1; */
+}
+
+.footer-info {
+ position: relative;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ text-align: center center;
+ z-index:2;
+}
+
+.footer-info a{
+    font-size: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
