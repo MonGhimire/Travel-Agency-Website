@@ -57,10 +57,13 @@ html {
 .nav-link {
  text-decoration: none;
  font-size: 1.5rem;
- /* color: #1a1b1c;
- font-weight: 900; */
+ color: black;
 }
 
+.nav-link:hover {
+    color:rgb(228, 150, 150);
+
+}
 
 /* REUSABLE */
 
@@ -96,12 +99,14 @@ button {
  -moz-transition: 0.3s;
  -ms-transition: 0.3s;
  -o-transition: 0.3s;
+ 
 }
 
 .button:hover {
  background-color: #1a1b1c;
+ 
+ 
 }
-
 
 input {
  outline: none;
@@ -148,15 +153,14 @@ input {
  top: 30%;
  left: 50%;
  transform: translate(-50%,-50%);
- /* text-align: center; */
- /* color: aliceblue; */
 }
 
 .home-title {
  font-weight:900;
  text-transform: capitalize;
  display: block;
- margin-bottom: .75rem;
+ margin-top: 120px;
+ margin-bottom: .50rem;
  font-size: 2rem;
 
 }
@@ -171,7 +175,8 @@ input {
  color: aliceblue;
  /* color: transparent; */
  line-height: 5.3rem;
-} */
+ padding-top: .3em;
+} 
 
 .colored {
  color: yellow;
@@ -179,11 +184,14 @@ input {
 
 .home-button {
  position: absolute;
- bottom: 1.2%;
- right: 30%;
- padding: 3rem 2rem;
+ transform: translate(10%,20%);
+ /* bottom: -35%;
+ right: 70%; */
+ padding: 2rem 4rem;
+ background-color: rgba(197, 125, 125, 0.4);
+ text-transform: uppercase;
+ 
 }
-
 
 
 /* ABOUT */
@@ -216,6 +224,7 @@ input {
  width: 40%;
  height: 100%;
 
+
 }
 
 .about-image-1 {
@@ -223,8 +232,11 @@ input {
  height:400px;
  position:absolute;
  bottom: 35%;
- left: -20%;
+ left: -10%;
  z-index: 4;
+ border-radius: 3%;
+ 
+ 
 }
 
 .about-image-2 {
@@ -233,22 +245,34 @@ input {
  z-index: 7;
  position: absolute;
  bottom: 20%;
- left: 0;
+ left: 30%;
+ border-radius: 3%;
+ 
 }
 
 .about-image-3 {
- width: 760px;
+ width: 700px;
  position: absolute;
+ border-radius: 3%;
  /* left: 0;
  top: 0; */
 }
 
+
 .about-image-1:hover {
  z-index: 9;
+
 }
+
+.about-image-2:hover {
+    z-index: 8;
+ 
+   }
+
 
 .about-image-3:hover{
  z-index: 10;
+ animation: drop 1.5s ease;
 }
 
 
@@ -281,6 +305,9 @@ text-align: center;
 .about-btn {
  position: absolute;
  bottom: 0;
+ transform: translate(150%,0%);
+ background-color: rgb(228, 150, 150);
+
 }
 
 
@@ -387,12 +414,69 @@ margin-left: 6rem;
  -o-transform:scale(1.1);
 }
 
+/* -----End of Destinations----- */
+
+/* ---Contact Section--- */
+
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+}
+
+.contact-box {
+
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+     
+}
+
+form {
+    margin: 35px;
+}
+
+.input-field {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+}
+
+#formBtn {
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgb(228, 150, 150);
+    margin-top: 18px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* -----End of Contact Form----- */
+
 /* --Footer changes-- */
 footer {
  position: relative;
  height: 500px;
  width: 100%;
- margin-top: 1rem;
  text-align: center;  
 
 }
@@ -404,14 +488,13 @@ footer {
  left: 0;
  height: 500px;
  width: 100%;
- background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+ background-image: url(https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
  background-size: cover;
  background-repeat: no-repeat;
- /* background-position: center bottom; */
- filter: blur(4px)
+ background-position: center center;
+ filter: blur(5px)
  
- /* padding: 10px, 10px; */
- /* z-index: 1; */
+
 }
 
 .footer-info {
@@ -421,16 +504,35 @@ footer {
  transform: translate(-50%,-50%);
  text-align: center center;
  z-index:2;
+ color: white;
 }
 
+.footer-info h2 {
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+}
 .footer-info a{
     font-size: 30px;
+    color: white;
+    padding: 5px;
+    
     
 }
 
 
 
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 
 
